@@ -209,3 +209,102 @@ h1 {
     font-size: 50px;
   }
 }
+
+.banner{
+  width: 100%;
+}
+.featuredProductsText{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.featuredProductsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.productCard{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(238, 238, 238);
+  box-shadow: 0 4px 10px 0px rgb(238, 238, 238);
+  padding: 5px;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+.productCard:hover{
+  box-shadow: 0 4px 10px 5px rgb(238, 238, 238);
+  transform: scale(1.02);
+}
+.productImage{
+  width: 20vw;
+  border-radius: 15px;
+}
+@media (max-width: 640px) {
+  .productImage {
+      width: 40vw;
+  }
+}
+.productName{
+  margin-top: 5px;
+}
+.priceAndCartContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.productPrice{
+  display: flex;
+  align-items: center;
+}
+.shoppingCartIcon{
+  height: 25px;
+}
+.shoppingCartIcon:hover{
+  cursor: pointer;
+  transform: scale(1.11);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #101820;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+}
+.socialMediaIconContainer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.socialMediaIconContainer ion-icon {
+  color: white;
+  font-size: 22px;
+  margin: 15px;
+  margin-top: 10px;
+  background-color: #101820;
+}
+.socialMediaIconContainer ion-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.newArrivalsText{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.newArrivalsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
