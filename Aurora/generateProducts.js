@@ -10,3 +10,4 @@ for(i=0;i<7;i++){
     const proudctCardClone=productCard.cloneNode(true);
     newArrivalsContainer.appendChild(proudctCardClone);
  }
+
