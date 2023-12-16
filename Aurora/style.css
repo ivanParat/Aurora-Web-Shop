@@ -563,3 +563,28 @@ footer {
     z-index: 5;
   }
 }
+
+.firstLetterOfUsername{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: x-large;
+  background-color: #ec6d32;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+  display: none;
+}
+.firstLetterOfUsername:hover {
+  background-color: #fff67e;
+}
+.firstLetterOfUsername:hover .mobile-mini-menu {
+  display: flex;
+  top: 60px;
+}
+.firstLetterOfUsername:checked .mobile-mini-menu {
+  display: flex;
+  top: 65px;
+}
