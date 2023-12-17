@@ -1,0 +1,115 @@
+[
+    {
+        "name": "T-shirt Round Neck Short Sleeves In Organic Cotton",
+        "brand": "Royal Mer",
+        "price": 55.00,
+        "category": "Clothes",
+        "imageSrc": "https://www.royal-mer.com/wp-content/uploads/2022/05/RoyalMer-PE22-SALOMON-ANCRE-ELECTRICO-882A4552-939x1024.jpg"
+    },
+    {
+        "name": "501® Original Fit Men's Jeans - Dark Wash",
+        "brand": "Levi's",
+        "price": 68.00,
+        "category": "Clothes",
+        "imageSrc": "https://lsco.scene7.com/is/image/lsco/005013139-alt2-pdp-lse?fmt=jpeg&qlt=70&resMode=bisharp&fit=crop,0&op_usm=1.25,0.6,8&wid=2000&hei=1800"
+    },
+    {
+        "name": "Air Jordan 1 Mid White/Metallic",
+        "brand": "Nike",
+        "price": 139.99,
+        "category": "Clothes",
+        "imageSrc": "https://www.snipes.hr/dw/image/v2/BDCB_PRD/on/demandware.static/-/Sites-snse-master-eu/default/dw63c27695/2169392_P.jpg?sw=450&sh=450&sm=fit&sfrm=png"
+    },
+    {
+        "name": "Spongebob Classic - Spongebob Squarepants - T-Shirt",
+        "brand": "TeePublic",
+        "price": 16.00,
+        "category": "Clothes",
+        "imageSrc": "https://res.cloudinary.com/teepublic/image/private/s--d1C1L6-C--/t_Resized%20Artwork/c_crop,x_10,y_10/c_fit,w_470/c_crop,g_north_west,h_626,w_470,x_0,y_0/g_north_west,u_upload:v1462829024:production:blanks:a59x1cgomgu5lprfjlmi,x_-395,y_-325/b_rgb:eeeeee/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1505514470/production/designs/1903038_1.jpg"
+    },
+    {
+        "name": "Black Beanie",
+        "brand": "Allbirds",
+        "price": 28.99,
+        "category": "Clothes",
+        "imageSrc": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1776,f_auto,q_auto,b_rgb:f5f5f5/https://www.allbirds.com/cdn/shop/products/AF00020_BASICS_FRONT_GLOBAL_BEANIE_JET_BLACK.png?v=1666672632"
+    },
+    {
+        "name": "Check Wool Blend Cardigan",
+        "brand": "Burberry",
+        "price": 1378.00,
+        "category": "Clothes",
+        "imageSrc": "https://assets.burberry.com/is/image/Burberryltd/36EE2396-2FBF-45A3-BAE0-B13E46881048?$BBY_V3_SL_1$&wid=1501&hei=1500"
+    },
+    {
+        "name": "Air Force One White",
+        "brand": "Nike",
+        "price": 119.99,
+        "category": "Clothes",
+        "imageSrc": "https://www.snipes.hr/dw/image/v2/BDCB_PRD/on/demandware.static/-/Sites-snse-master-eu/default/dw84b074c9/1126425_P.jpg?sw=450&sh=450&sm=fit&sfrm=png"
+    },
+    {
+        "name": "Everyday Cushioned Training Ankle Socks",
+        "brand": "Nike",
+        "price": 14.99,
+        "category": "Clothes",
+        "imageSrc": "https://www.snipes.hr/dw/image/v2/BDCB_PRD/on/demandware.static/-/Sites-snse-master-eu/default/dwdcdc74df/1479102_P.jpg?sw=450&sh=450&sm=fit&sfrm=png"
+    },
+    {
+        "name": "Bucket Hat",
+        "brand": "Uniqlo",
+        "price": 24.90,
+        "category": "Clothes",
+        "imageSrc": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/462252/item/goods_09_462252.jpg"
+    },
+    {
+        "name": "Exaggerated Check Pleated Cotton Skirt",
+        "brand": "Burberry",
+        "price": 259.99,
+        "category": "Clothes",
+        "imageSrc": "https://assets.burberry.com/is/image/Burberryltd/AE872991-4A07-4981-89B0-B9A578AEBB09?$BBY_V3_SL_1$&wid=1501&hei=1500"
+    },
+    {
+        "name": "Basketball Cap NBA - Chicago Bulls/Black",
+        "brand": "Decathlon",
+        "price": 25.00,
+        "category": "Clothes",
+        "imageSrc": "https://contents.mediadecathlon.com/p2140100/k$3750266835516afb7d769b6c37894eff/adult-nba-bulls-basketball-cap-red.jpg?format=auto&quality=40&f=452x452"
+    },
+    {
+        "name": "Adicolor Classic Trefoil Baseball Cap",
+        "brand": "Adidas",
+        "price": 22.99,
+        "category": "Clothes",
+        "imageSrc": "https://www.snipes.hr/dw/image/v2/BDCB_PRD/on/demandware.static/-/Sites-snse-master-eu/default/dwcc5fe70d/2092308_P.jpg?sw=450&sh=450&sm=fit&sfrm=png"
+    },
+    {
+        "name": "Comfeel Touch Side Gore Short Boots",
+        "brand": "Uniqlo",
+        "price": 32.99,
+        "category": "Clothes",
+        "imageSrc": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/440611/item/goods_09_440611.jpg?width=494"
+    },
+    {
+        "name": "Heavyweight Denim Jacket",
+        "brand": "Burberry",
+        "price": 1700.00,
+        "category": "Clothes",
+        "imageSrc": "https://assets.burberry.com/is/image/Burberryltd/1E2205CB-D5AF-4FC2-A699-1C23C40ECBC9?$BBY_V3_SL_1$&wid=1501&hei=1500"
+    },
+    {
+        "name": "Sweat Pullover Hoodie",
+        "brand": "Uniqlo",
+        "price": 19.99,
+        "category": "Clothes",
+        "imageSrc": "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/444967/sub/goods_444967_sub14.jpg?width=494"
+    },
+    {
+        "name": "Carmen Scuff Slippers",
+        "brand": "Target",
+        "price": 18.00,
+        "category": "Clothes",
+        "imageSrc": "https://target.scene7.com/is/image/Target/GUEST_5dbedfaf-1e14-40a3-8797-68cb379912c9?wid=488&hei=488&fmt=pjpeg"
+    }
+  ]
+  
