@@ -287,26 +287,58 @@ h1 {
   box-shadow: 0 4px 10px 5px rgb(238, 238, 238);
   transform: scale(1.02);
 }
-.productImage {
+.imageContainer{
+  position: relative;  /* The position: relative; is used to position the absolutely positioned child element relative to this container */
   width: 20vw;
-  border-radius: 15px;
+}
+.imageContainer::before {
+  /* The ::before pseudo-element is used to insert an invisible element before the content of the .imageContainer. This element is styled as a block-level element with display: block;. The padding-top: 100%; creates a padding at the top of the block that is equal to the width of the container, resulting in a square because it's a percentage of the container's width. */
+  content: "";
+  display: block;
+  padding-top: 100%; /* This creates a square based on a 1:1 aspect ratio */
+}
+.imageContainer img {
+  /* Position: absolute; positions it absolutely within the .imageContainer. The top: 0; and left: 0; properties ensure that it starts from the top-left corner of the container. Both width: 100%; and height: 100%; make the content take up the entire dimensions of the container, maintaining the 1:1 aspect ratio. */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image fill its container horizontally */
+  height: 100%; /* Make the image fill its container vertically */
+}
+.productImage {
+  border-radius: 10px;
 }
 @media (max-width: 640px) {
-  .productImage {
+  .imageContainer {
     width: 40vw;
   }
 }
-.productName {
+.productBrand {
   margin-top: 5px;
+  color: gray;
+  font-size: 0.8em;
+}
+.productName {
+  margin-top: 1px;
+  margin-bottom: 6px;
+  width: 20vw;
+}
+@media (max-width: 640px) {
+  .productName {
+    width: 40vw;
+  }
 }
 .priceAndCartContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .productPrice {
   display: flex;
   align-items: center;
+  color: #007043;
+  font-size: 1.1em;
 }
 .shoppingCartIcon {
   height: 25px;

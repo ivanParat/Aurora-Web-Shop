@@ -35,18 +35,18 @@
         "imageSrc": "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1776,f_auto,q_auto,b_rgb:f5f5f5/https://www.allbirds.com/cdn/shop/products/AF00020_BASICS_FRONT_GLOBAL_BEANIE_JET_BLACK.png?v=1666672632"
     },
     {
+        "name": "Air Force 1 White",
+        "brand": "Nike",
+        "price": 119.99,
+        "category": "Clothes",
+        "imageSrc": "https://www.snipes.hr/dw/image/v2/BDCB_PRD/on/demandware.static/-/Sites-snse-master-eu/default/dw84b074c9/1126425_P.jpg?sw=450&sh=450&sm=fit&sfrm=png"
+    },
+    {
         "name": "Check Wool Blend Cardigan",
         "brand": "Burberry",
         "price": 1378.00,
         "category": "Clothes",
         "imageSrc": "https://assets.burberry.com/is/image/Burberryltd/36EE2396-2FBF-45A3-BAE0-B13E46881048?$BBY_V3_SL_1$&wid=1501&hei=1500"
-    },
-    {
-        "name": "Air Force One White",
-        "brand": "Nike",
-        "price": 119.99,
-        "category": "Clothes",
-        "imageSrc": "https://www.snipes.hr/dw/image/v2/BDCB_PRD/on/demandware.static/-/Sites-snse-master-eu/default/dw84b074c9/1126425_P.jpg?sw=450&sh=450&sm=fit&sfrm=png"
     },
     {
         "name": "Everyday Cushioned Training Ankle Socks",
@@ -110,6 +110,234 @@
         "price": 18.00,
         "category": "Clothes",
         "imageSrc": "https://target.scene7.com/is/image/Target/GUEST_5dbedfaf-1e14-40a3-8797-68cb379912c9?wid=488&hei=488&fmt=pjpeg"
+    },
+
+
+    {
+        "name": "iPhone 14 Pro",
+        "brand": "Apple",
+        "price": 1099.99,
+        "category": "Electronics",
+        "imageSrc": "https://www.links.hr/content/images/thumbs/016/0168760_smartphone-apple-iphone-14-pro-max-6-7-6-gb-128-gb-ios-crni-010301411.jpg"
+    },
+    {
+        "name": "Galaxy S22 Ultra",
+        "brand": "Samsung",
+        "price": 1199.99,
+        "category": "Electronics",
+        "imageSrc": "https://images.samsung.com/hr/smartphones/galaxy-s22-ultra/buy/02_carousel/04_basic-colors/s22_ultra_productkv_burgundy_mo.jpg"
+    },
+    {
+        "name": "Pixel 7",
+        "brand": "Google",
+        "price": 999.99,
+        "category": "Electronics",
+        "imageSrc": "https://smartlab.hr/cms/wp-content/uploads/2023/02/712JkPUUlRL.jpg "
+    },
+    {
+        "name": "Xperia 1 III",
+        "brand": "Sony",
+        "price": 1099.99,
+        "category": "Electronics",
+        "imageSrc": "https://www.sony.hr/image/bec37fd1196426136aae242507e874b0?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF"
+    },
+    {
+        "name": "Mi 12",
+        "brand": "Xiaomi",
+        "price": 899.99,
+        "category": "Electronics",
+        "imageSrc": "https://www.mobiri.hr/wp-content/uploads/2022/09/0139249_smartphone-xiaomi-12-6-28-8gb-256gb-android-12-plavi-010301013.jpg"
+    },
+    {
+        "name": "OnePlus 10 Pro",
+        "brand": "OnePlus",
+        "price": 1099.99,
+        "category": "Electronics",
+        "imageSrc": "https://smartlab.hr/cms/wp-content/uploads/2023/02/712JkPUUlRL.jpg"
+    },
+    {
+        "name": "ROG Phone 5",
+        "brand": "Asus",
+        "price": 999.99,
+        "category": "Electronics",
+        "imageSrc": "https://cdn11.bigcommerce.com/s-ss31ap/images/stencil/1280x1280/products/7904/30487/asus-rog-phone-5-5g-dual-sim-zs673ks__73816.1615936222.jpg?c=2"
+    },
+    {
+        "name": "Lumia 950 XL",
+        "brand": "Microsoft",
+        "price": 599.99,
+        "category": "Electronics",
+        "imageSrc": "https://news.microsoft.com/wp-content/uploads/2015/11/Lumia-950-XL-1024x732.jpg"
+    },
+    {
+        "name": "Moto G Stylus",
+        "brand": "Motorola",
+        "price": 299.99,
+        "category": "Electronics",
+        "imageSrc": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51bfhhUKhTL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "name": "ZenFone 8",
+        "brand": "Asus",
+        "price": 799.99,
+        "category": "Electronics",
+        "imageSrc": "https://www.bug.hr/img/asus-zenfone-8-najbolji-medju-kompaktnima_jipehc.jpg"
+    },
+    {
+        "name": "BlackBerry Key3",
+        "brand": "BlackBerry",
+        "price": 699.99,
+        "category": "Electronics",
+        "imageSrc": "https://i.ytimg.com/vi/HEwk9lAlvaA/maxresdefault.jpg"
+    },
+    {
+        "name": "Nokia 9 PureView",
+        "brand": "Nokia",
+        "price": 499.99,
+        "category": "Electronics",
+        "imageSrc": "https://www.smartphonehrvatska.com/wp-content/uploads/2021/11/Nokia-9-Pureview-nece-dobiti-android-11.jpg"
+    },
+    {
+        "name": "Redmi Note 11 Pro",
+        "brand": "Xiaomi",
+        "price": 399.99,
+        "category": "Electronics",
+        "imageSrc": "https://www.links.hr/content/images/thumbs/014/0142132_smartphone-xiaomi-redmi-note-11-pro-4g-6-67-6gb-128gb-android-11-plavi-010301045.jpg"
+    },
+    {
+        "name": "LG Velvet",
+        "brand": "LG",
+        "price": 599.99,
+        "category": "Electronics",
+        "imageSrc": "https://images.ctfassets.net/wcfotm6rrl7u/7tmC1j8GWx6SYq5pdYBQOU/52c0340713a7e03d86b2ef3fafe1300c/nokia-9_PureView-blue-front_back-int.png"
+    },
+    {
+        "name": "Fairphone 4",
+        "brand": "Fairphone",
+        "price": 699.99,
+        "category": "Electronics",
+        "imageSrc": "https://www.links.hr/content/images/thumbs/019/0193100_smartphone-fairphone-4-6-3-8gb-256gb-android-11-zeleni-010301722.jpg"
+    },
+    {
+        "name": "Realme GT",
+        "brand": "Realme",
+        "price": 499.99,
+        "category": "Electronics",
+        "imageSrc": "https://rukminim2.flixcart.com/image/850/1000/l3rmzrk0/mobile/5/k/h/-original-imagetme9qz26q4k.jpeg?q=90"
+    },
+    
+    
+    {
+        "name": "Lego Classic Creative Bricks",
+        "brand": "LEGO",
+        "price": 29.99,
+        "category": "Toys",
+        "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_pEl2J7bCTi9_yyQjR53-8k5WvgHdfZdRnQ&usqp=CAU"
+    },
+    {
+        "name": "Barbie Dreamhouse",
+        "brand": "Barbie",
+        "price": 179.99,
+        "category": "Toys",
+        "imageSrc": "https://i5.walmartimages.com/asr/ad9c70bb-8be0-4910-842a-96b17775f10b.1203a4cea9dac438e5cc74491c41e1f4.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+        "name": "Hot Wheels Basic Car 50-Pack",
+        "brand": "Hot Wheels",
+        "price": 49.99,
+        "category": "Toys",
+        "imageSrc": "https://i.ebayimg.com/images/g/xswAAOSwIwRgJ2qN/s-l1600.jpg"
+    },
+    {
+        "name": "Nerf N-Strike Elite Disruptor",
+        "brand": "Nerf",
+        "price": 12.99,
+        "category": "Toys",
+        "imageSrc": "https://images.svijet-medija.hr/img/78870-154/Disruptor.jpg"
+    },
+    {
+        "name": "Fisher-Price Laugh & Learn Smart Stages Chair",
+        "brand": "Fisher-Price",
+        "price": 24.99,
+        "category": "Toys",
+        "imageSrc": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51LXTMp-PXL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "name": "Melissa & Doug Wooden Building Blocks Set",
+        "brand": "Melissa & Doug",
+        "price": 69.99,
+        "category": "Toys",
+        "imageSrc": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/717LfhnQFfL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "name": "Play-Doh Modeling Compound 10-Pack",
+        "brand": "Play-Doh",
+        "price": 7.99,
+        "category": "Toys",
+        "imageSrc": "https://i.ebayimg.com/images/g/5lsAAOSwClJkW4N9/s-l1200.jpg"
+    },
+    {
+        "name": "VTech Sit-to-Stand Learning Walker",
+        "brand": "VTech",
+        "price": 34.99,
+        "category": "Toys",
+        "imageSrc": "https://goodbuygear.com/cdn/shop/products/258668d6-e135-43c9-900c-d3b68d68b33c_600x600.png?v=1677109209"
+    },
+    {
+        "name": "Crayola Inspiration Art Case",
+        "brand": "Crayola",
+        "price": 24.99,
+        "category": "Toys",
+        "imageSrc": "https://www.crayola.co.uk/-/media/International/UK/Product/52-9712-E-201_EAME_Silly-Scents_Mini-Twistable-Crayons_12ct_F-R/68-7404-E-201_EAME_Silly-Scents_Twistables_Colored-Pencils_12ct_F-R/04-0015-E-202_EAME_SS_Mini-Art-Case_Box_205_F-R/11236_Silly-Scents-Tub_Visual2/100651/04-1054-E-303_EAME_Inspiration-Art-Case_F1-R.jpg?h=551&la=en&mh=583&mw=667&w=667"
+    },
+    {
+        "name": "Radio Flyer Red Rider Trike",
+        "brand": "Radio Flyer",
+        "price": 49.99,
+        "category": "Toys",
+        "imageSrc": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81mxzNPIvVL.jpg"
+    },
+    {
+        "name": "Magna-Tiles Clear Colors 100-Piece Set",
+        "brand": "Magna-Tiles",
+        "price": 119.99,
+        "category": "Toys",
+        "imageSrc": "https://stoysnetcdn.com/tgtg/tgtg_ho17_tg04300/tgtg_ho17_tg04300.jpg"
+    },
+    {
+        "name": "LeapFrog Learning Friends 100 Words Book",
+        "brand": "LeapFrog",
+        "price": 17.99,
+        "category": "Toys",
+        "imageSrc": "https://i5.walmartimages.com/asr/e2698a8b-6711-4cda-b77c-39ead5fdf6f1.3173328c5b42eba1bab08f3f16a9886f.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+        "name": "Baby Einstein Take Along Tunes Musical Toy",
+        "brand": "Baby Einstein",
+        "price": 8.99,
+        "category": "Toys",
+        "imageSrc": "https://ecx.images-amazon.com/images/I/51NG4mQwCfL.jpg"
+    },
+    {
+        "name": "Green Toys Ferry Boat with Mini Cars Bathtub Toy",
+        "brand": "Green Toys",
+        "price": 19.99,
+        "category": "Toys",
+        "imageSrc": "https://www.anbbaby.com/cdn/shop/products/green-toys-ferry-boat-with-mini-cars-bathtub-toy-greenwhite-705783.jpg?v=1641430183"
+    },
+    {
+        "name": "LEGO DUPLO Classic Deluxe Brick Box",
+        "brand": "LEGO",
+        "price": 39.99,
+        "category": "Toys",
+        "imageSrc": "https://image.smythstoys.com/zoom/183671.jpg"
+    },
+    {
+        "name": "Melissa & Doug Food Groups - 21 Hand-Painted Wooden Pieces",
+        "brand": "Melissa & Doug",
+        "price": 19.99,
+        "category": "Toys",
+        "imageSrc": "https://www.oldechurchemporium.com/cdn/shop/products/fgs7.jpg?v=1657970794"
     }
   ]
   
