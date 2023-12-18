@@ -232,12 +232,11 @@ h1 {
   }
 }
 .search-bar {
-  position: absolute;
-  top: 60px;
-  left: 0;
+  display: flex;
+  background-color: #101820;
   display: flex;
   align-items: center;
-  margin-left: auto; /* Move the search bar to the right */
+  margin-right: 20px; /* Move the search bar to the right */
 }
 
 .search-input {
@@ -245,15 +244,69 @@ h1 {
   margin-right: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 75%;
 }
 
 .search-button {
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 30px;
   background-color: #008550;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
   cursor: pointer;
+  margin-right: 0;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+
+}
+.search-button:hover {
+  color: white;
+  background-color: #89e6d9;
+}
+.search-bar-mobile {
+  display: none;
+}
+@media screen and (max-width: 1370px){
+  .search-bar{
+    display: none;
+  }
+  .search-bar-mobile {
+    display: flex;
+    background-color: #101820;
+    padding: 0px 20px 20px 20px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); 
+  }
+  
+  .search-input-mobile {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 75%;
+  }
+  
+  .search-button-mobile {
+    background-color: #008550;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    margin-right: 0;
+  }
+  
 }
 
 .banner {
@@ -608,15 +661,30 @@ footer {
   cursor: pointer;
   transition: background-color 300ms ease-out;
   display: none;
+  margin-left: 10px;
+}
+@media screen and (max-width: 1370px) {
+  .firstLetterOfUsername {
+    position: absolute;
+    right: 70px;
+  }
 }
 .firstLetterOfUsername:hover {
   background-color: #fff67e;
 }
 .firstLetterOfUsername:hover .mobile-mini-menu {
   display: flex;
-  top: 60px;
+  top: 50px;
+  border-top: 10px solid #101820;
+}
+@media screen and (max-width: 1370px) {
+  .firstLetterOfUsername:hover .mobile-mini-menu {
+    display: flex;
+    top: 40px;
+    border-top: 10px solid #101820;
+  }
 }
 .firstLetterOfUsername:checked .mobile-mini-menu {
   display: flex;
-  top: 65px;
+  top: 50px;
 }
