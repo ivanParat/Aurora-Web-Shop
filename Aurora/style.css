@@ -56,7 +56,7 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
   .links-wrapper {
     display: none;
   }
@@ -143,7 +143,7 @@ body {
   display: none;
   cursor: pointer;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
   .hamburger {
     display: block;
   }
@@ -165,7 +165,7 @@ body {
 .navigation__wraper-mobile {
   display: none;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
   .navigation__wraper-mobile {
     background-color: #282828;
     display: flex;
@@ -271,7 +271,7 @@ h1 {
 .search-bar-mobile {
   display: none;
 }
-@media screen and (max-width: 1370px){
+@media screen and (max-width: 1200px){
   .search-bar{
     display: none;
   }
@@ -663,7 +663,7 @@ footer {
   display: none;
   margin-left: 10px;
 }
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1200px) {
   .firstLetterOfUsername {
     position: absolute;
     right: 70px;
@@ -677,7 +677,7 @@ footer {
   top: 50px;
   border-top: 10px solid #101820;
 }
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1200px) {
   .firstLetterOfUsername:hover .mobile-mini-menu {
     display: flex;
     top: 40px;

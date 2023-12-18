@@ -6,6 +6,7 @@ const container = document.querySelector(".container");
 const showButton = document.querySelector(".link--button");
 const signInEnterBtn = document.getElementById("signInEnter");
 const signUpEnterBtn = document.getElementById("signUpEnter");
+const logOutBtn=document.getElementById("logOutBtn");
 const signUpUsername = document.getElementById("signUpUsername");
 const signUpEmail = document.getElementById("signUpEmail");
 const signUpPassword = document.getElementById("signUpPassword");
@@ -60,7 +61,7 @@ function readSessionStorage(){
   let password=userInfo.password;
   let newUser=new user(localStorageName,email,username,password);
   currentlyActiveUser=newUser;
-  firstLetterOfUsername.innerHTML+=currentlyActiveUser.username[0].toUpperCase();
+  firstLetterOfUsername.innerHTML=currentlyActiveUser.username[0].toUpperCase()+firstLetterOfUsername.innerHTML;
   firstLetterOfUsername.style.display="flex";
 }
 readSessionStorage();
@@ -110,7 +111,7 @@ signUpEnterBtn.addEventListener("click", () => {
   newUser.addToLocalStorage();
   newUser.addToSessionStorage();
   currentlyActiveUser=newUser;
-  firstLetterOfUsername.innerHTML+=currentlyActiveUser.username[0].toUpperCase();
+  firstLetterOfUsername.innerHTML=currentlyActiveUser.username[0].toUpperCase()+firstLetterOfUsername.innerHTML;
   firstLetterOfUsername.style.display="flex";
   signUpEmail.value="";
   signUpUsername.value="";
@@ -130,9 +131,17 @@ signInEnterBtn.addEventListener("click", () => {
   }
   user.addToSessionStorage();
   currentlyActiveUser=user;
-  firstLetterOfUsername.innerHTML+=currentlyActiveUser.username[0].toUpperCase();
+  firstLetterOfUsername.innerHTML=currentlyActiveUser.username[0].toUpperCase()+firstLetterOfUsername.innerHTML;
   firstLetterOfUsername.style.display="flex";
   signInEmail.value="";
   signInPassword.value="";
   container.classList.toggle("visibleContainer");
 });
+
+//this function is called in html, wouldn't work with event listener for some reason
+function logOut(){
+  firstLetterOfUsername.innerHTML=firstLetterOfUsername.innerHTML.replace(currentlyActiveUser.username[0].toUpperCase(), '');
+  firstLetterOfUsername.style.display="none";
+  currentlyActiveUser=null;
+  sessionStorage.clear();
+}
