@@ -68,17 +68,16 @@ fetchUserData(userDataQuery);
 console.log(userList);
 
 function readSessionStorage(){
-  let firstKey=Object.keys(sessionStorage)[0];
-  let userInfo=JSON.parse(sessionStorage.getItem(firstKey));
+  let userInfo=JSON.parse(sessionStorage.getItem('user'));
   if(userInfo==null){
     currentlyActiveUser=null;
     return 0;
   }
-  let localStorageName=firstKey;
   let email=userInfo.email;
   let username=userInfo.username;
   let password=userInfo.password;
-  let newUser=new user(localStorageName,email,username,password);
+  let newUser=new user(email,username,password);
+  console.log(newUser);
   currentlyActiveUser=newUser;
   firstLetterOfUsername.innerHTML=currentlyActiveUser.username[0].toUpperCase()+firstLetterOfUsername.innerHTML;
   firstLetterOfUsername.style.display="flex";
