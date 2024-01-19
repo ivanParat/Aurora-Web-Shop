@@ -30,23 +30,31 @@ fistForm.addEventListener("submit", (e) => e.preventDefault());
 secondForm.addEventListener("submit", (e) => e.preventDefault());
 
 class user{
-  constructor(localStorageName, email, username, password){
-      this.localStorageName=localStorageName;
+  constructor(email, username, password){
       this.email=email;
       this.username=username;
       this.password=password;
   }
-  addToLocalStorage(){
-      localStorage.setItem(this.localStorageName, JSON.stringify({email:this.email, username:this.username, password:this.password} ));
-  }
   addToSessionStorage(){
-    sessionStorage.setItem(this.localStorageName, JSON.stringify({email:this.email, username:this.username, password:this.password} ));
+    sessionStorage.setItem('user', JSON.stringify({email:this.email, username:this.username, password:this.password} ));
 }
 }
 
 let userList=[];
 
 let currentlyActiveUser=null;
+
+fetch('http://localhost:3000/getData')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(element => {
+      newUser=new user(element.email, element.username, element.password);
+      userList.push(newUser);
+    });
+  })
+  .catch(error => console.error('Error fetching data:', error));
+
+console.log(userList);
 
 function readSessionStorage(){
   let firstKey=Object.keys(sessionStorage)[0];
@@ -65,19 +73,6 @@ function readSessionStorage(){
   firstLetterOfUsername.style.display="flex";
 }
 readSessionStorage();
-
-function readLocalStorage(){
-  for(i=0;i<localStorage.length;i++){
-      let userInfo=JSON.parse(localStorage.getItem("user"+i));
-      let localStorageName="user"+i;
-      let email=userInfo.email;
-      let username=userInfo.username;
-      let password=userInfo.password;
-      let newUser=new user(localStorageName,email,username,password);
-      userList.push(newUser);
-  }
-}
-readLocalStorage();
 
 function signUpCheck(email){
   for(i=0;i<userList.length;i++){
@@ -98,7 +93,7 @@ function signInCheck(email, password){
   return null;
 }
 
-signUpEnterBtn.addEventListener("click", () => {
+signUpEnterBtn.addEventListener("click", async function() {
   //korisnik se ne može prijaviti ako nije popunio sva polja ili ako je netko već prijavljen
   if(!(signUpEmail.value && signUpUsername.value && signUpPassword.value) || currentlyActiveUser!=null){
     return 0;
@@ -107,9 +102,33 @@ signUpEnterBtn.addEventListener("click", () => {
   if(signUpCheck(signUpEmail.value)==false){
     return 0;
   }
-  let newUser=new user("user"+localStorage.length, signUpEmail.value, signUpUsername.value, signUpPassword.value);
-  newUser.addToLocalStorage();
+  
+
+  const data = {
+    email: signUpEmail.value,
+    username: signUpUsername.value,
+    password: signUpPassword.value,
+  };
+
+  const response = await fetch('http://localhost:3000/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+
+  const result = await response.json();
+  if (result.success) {
+    console.log('Data uploaded successfully:', result.data);
+  } else {
+    console.error('Error uploading data:', result.error);
+  }
+
+
+  let newUser=new user(signUpEmail.value, signUpUsername.value, signUpPassword.value);
   newUser.addToSessionStorage();
+  userList.push(newUser);
   currentlyActiveUser=newUser;
   firstLetterOfUsername.innerHTML=currentlyActiveUser.username[0].toUpperCase()+firstLetterOfUsername.innerHTML;
   firstLetterOfUsername.style.display="flex";

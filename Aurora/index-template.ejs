@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="navigation__wrapper">
+        <div class="logo">
+          <a href="index.html"><h1>Aurora</h1></a>
+        </div>
+        <div class="links-wrapper">
+          <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input" />
+            <button class="search-button">Search</button>
+          </div>
+          
+          <div class="link">
+            <a class="link__text" href="">Categories </a>
+            <div class="mobile-mini-menu">
+              <div class="mobile-links">
+                <a class="mobile-link" href="clothes.html">Clothes</a>
+                <a class="mobile-link" href="electronics.html">Electronics</a>
+                <a class="mobile-link" href="tools.html">Tools</a>
+                <a class="mobile-link" href="toys.html">Toys</a>
+                <a class="mobile-link" href="other.html">Other</a>
+              </div>
+            </div>
+          </div>
+          <div class="link">
+            <a class="link__text" href="">About us </a>
+          </div>
+          <div class="link">
+            <a class="link__text" href="">Cart </a>
+          </div>
+          <div class="link">
+            <a class="link__text link--button" href="">Sign In </a>
+          </div>
+        </div>
+        <div class="firstLetterOfUsername">
+          <div class="mobile-mini-menu">
+            <div class="mobile-links">
+              <div class="mobile-link" id="logOutBtn" onclick="logOut()">Log Out</div>
+            </div>
+          </div>
+        </div>
+        <input type="checkbox" class="hidden" id="hamburger" />
+        <label for="hamburger" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <div class="navigation__wraper-mobile">
+          <div class="mobile-center">
+            <div class="link">
+              <a class="link__text" href="">Products</a>
+            </div>
+            <div class="link">
+              <a class="link__text" href="">Categories </a>
+              <div class="mobile-mini-menu">
+                <div class="mobile-links">
+                  <a class="mobile-link" href="clothes.html">Clothes</a>
+                  <a class="mobile-link" href="electronics.html">Electronics</a>
+                  <a class="mobile-link" href="tools.html">Tools</a>
+                  <a class="mobile-link" href="toys.html">Toys</a>
+                  <a class="mobile-link" href="other.html">Other</a>
+                </div>
+              </div>
+            </div>
+            <div class="link">
+              <a class="link__text" href="">About us </a>
+            </div>
+            <div class="link">
+              <a class="link__text" href="">Cart </a>
+            </div>
+            <div class="link">
+              <a class="link__text link--button" href="">Sign In </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-bar-mobile">
+        <input type="text" placeholder="Search" class="search-input-mobile" />
+        <button class="search-button-mobile">Search</button>
+      </div>
+      
+    </div>
+
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+          <h2 class="form__title">Sign Up</h2>
+          <input type="text" placeholder="User" class="input" id="signUpUsername"/>
+          <input type="email" placeholder="Email" class="input" id="signUpEmail"/>
+          <input type="password" placeholder="Password" class="input" id="signUpPassword"/>
+          <button class="btn" id="signUpEnter">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+          <h2 class="form__title">Sign In</h2>
+          <input type="email" placeholder="Email" class="input" id="signInEmail"/>
+          <input type="password" placeholder="Password" class="input" id="signInPassword"/>
+          <a href="#" class="link">Forgot your password?</a>
+          <button class="btn" id="signInEnter">Sign In</button>
+        </form>
+      </div>
+
+      <!-- Overlay -->
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button class="btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featuredProductsText">Featured Products</div>
+    <div class="featuredProductsContainer">
+      <% for (let i = 0; i < 8; i++) { %>
+        <div class="productCard">
+            <div class="imageContainer">
+                <img
+                  src="<%= products[i].imagesrc %>"
+                  class="productImage"
+                />
+            </div>
+            <div class="productBrand"><%= products[i].brand %></div>
+            <div class="productName"><%= products[i].name %></div>
+            <div class="priceAndCartContainer">
+                <div class="productPrice">€<%= products[i].price %></div>
+                <img
+                    src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/shopping_cart.png"
+                    class="shoppingCartIcon"
+                />
+            </div>  
+        </div>
+      <% } %>
+    </div>
+
+    <img
+      src="https://static.vecteezy.com/system/resources/previews/004/113/684/original/shopping-concept-for-web-banner-woman-buys-online-shopper-makes-purchases-and-receives-online-orders-at-store-modern-people-scene-illustration-in-flat-cartoon-design-with-person-characters-vector.jpg"
+      class="banner"
+    />
+
+    <div class="newArrivalsText">New Arrivals</div>
+    <div class="newArrivalsContainer">
+      <% for (let i = 8; i < 16; i++) { %>
+        <div class="productCard">
+            <div class="imageContainer">
+                <img
+                  src="<%= products[i].imagesrc %>"
+                  class="productImage"
+                />
+            </div>
+            <div class="productBrand"><%= products[i].brand %></div>
+            <div class="productName"><%= products[i].name %></div>
+            <div class="priceAndCartContainer">
+                <div class="productPrice">€<%= products[i].price %></div>
+                <img
+                    src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/shopping_cart.png"
+                    class="shoppingCartIcon"
+                />
+            </div>  
+        </div>
+      <% } %>
+    </div>
+
+    <footer>
+      Connect with us at
+      <div class="socialMediaIconContainer">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="authentication.js"></script>
+  </body>
+</html>
