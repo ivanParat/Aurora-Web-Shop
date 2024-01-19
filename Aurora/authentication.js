@@ -178,5 +178,5 @@ function logOut(){
   firstLetterOfUsername.innerHTML=firstLetterOfUsername.innerHTML.replace(currentlyActiveUser.username[0].toUpperCase(), '');
   firstLetterOfUsername.style.display="none";
   currentlyActiveUser=null;
-  sessionStorage.clear();
+  sessionStorage.removeItem('user');
 }
