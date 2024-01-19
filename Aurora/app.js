@@ -15,29 +15,32 @@ const pool = new Pool({
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/getData', async (req, res) => {
+app.post('/query', async (req, res) => {
+  const { query, values } = req.body;
+
+  console.log('Received query:', query);
+  console.log('Received values:', values);
+
   try {
-    const result = await pool.query('SELECT * FROM aurorauser');
-    const data = result.rows;
-    res.json(data);
+    let result;
+
+    if (values) {
+      result = await pool.query(query, values);
+    } else {
+      result = await pool.query(query);
+    }
+
+    if (result.rows.length > 0) {
+      res.json({ success: true, data: result.rows });
+    } else {
+      res.json({ success: true, message: 'No data found.' });
+    }
   } catch (error) {
-    console.error('Error fetching data from PostgreSQL:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    console.error('Error executing query in PostgreSQL:', error);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
   }
 });
 
-app.post('/submit', async (req, res) => {
-    const { email, username, password } = req.body;
-  
-    try {
-      const result = await pool.query('INSERT INTO aurorauser (username, email, password) VALUES ($1, $2, $3) RETURNING *', [email, username, password]);
-      const insertedData = result.rows[0];
-      res.json({ success: true, data: insertedData });
-    } catch (error) {
-      console.error('Error inserting data into PostgreSQL:', error);
-      res.status(500).json({ success: false, error: 'Internal Server Error' });
-    }
-  });
 
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');

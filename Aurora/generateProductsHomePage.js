@@ -26,7 +26,7 @@ async function generateHTMLContent() {
       // Read the EJS template from a file (index-template.ejs)
       const template = fs.readFileSync('index-template.ejs', 'utf8');
 
-      // Render the template with the array of employees
+      // Render the template with the array of products
       const htmlContent = ejs.render(template, { products: randomizedData });
       
       // Write the rendered HTML content to a file (index.html)

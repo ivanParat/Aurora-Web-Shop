@@ -44,15 +44,26 @@ let userList=[];
 
 let currentlyActiveUser=null;
 
-fetch('http://localhost:3000/getData')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach(element => {
-      newUser=new user(element.email, element.username, element.password);
-      userList.push(newUser);
-    });
+const fetchUserData = (query) => {
+  fetch('http://localhost:3000/query', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ query }),
   })
-  .catch(error => console.error('Error fetching data:', error));
+    .then(response => response.json())
+    .then(data => {
+      // Process the data as needed
+      data.data.forEach(element => {
+        newUser = new user(element.email, element.username, element.password);
+        userList.push(newUser);
+      });
+    })
+    .catch(error => console.error('Error fetching data:', error));
+};
+const userDataQuery = "SELECT * FROM aurorauser";
+fetchUserData(userDataQuery);
 
 console.log(userList);
 
@@ -103,27 +114,33 @@ signUpEnterBtn.addEventListener("click", async function() {
     return 0;
   }
   
-
-  const data = {
+  const postUserData = (query, data) => {
+    fetch('http://localhost:3000/query', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query, values: Object.values(data) }),
+    })
+      .then(response => response.json())
+      .then(result => {
+        if (result.success) {
+          console.log('Data uploaded successfully:', result.data);
+        } else {
+          console.error('Error uploading data:', result.error);
+        }
+      })
+      .catch(error => console.error('Error uploading data:', error));
+  };
+  
+  const insertQuery = "INSERT INTO aurorauser (email, username, password) VALUES ($1, $2, $3) RETURNING *";
+  const newData = {
     email: signUpEmail.value,
     username: signUpUsername.value,
     password: signUpPassword.value,
   };
-
-  const response = await fetch('http://localhost:3000/submit', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  });
-
-  const result = await response.json();
-  if (result.success) {
-    console.log('Data uploaded successfully:', result.data);
-  } else {
-    console.error('Error uploading data:', result.error);
-  }
+  postUserData(insertQuery, newData);
+  
 
 
   let newUser=new user(signUpEmail.value, signUpUsername.value, signUpPassword.value);

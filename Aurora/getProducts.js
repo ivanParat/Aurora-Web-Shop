@@ -36,6 +36,7 @@ async function getDataFromDatabase(query) {
   }
 }
 
+//not used 
 async function insertDataIntoDatabase(query, values) {
   try {
     const result = await client.query(query, values);
