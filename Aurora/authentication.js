@@ -65,7 +65,7 @@ const fetchUserData = (query) => {
 const userDataQuery = "SELECT * FROM aurorauser";
 fetchUserData(userDataQuery);
 
-console.log(userList);
+console.log("Users in database:",userList);
 
 function readSessionStorage(){
   let userInfo=JSON.parse(sessionStorage.getItem('user'));
@@ -77,7 +77,6 @@ function readSessionStorage(){
   let username=userInfo.username;
   let password=userInfo.password;
   let newUser=new user(email,username,password);
-  console.log(newUser);
   currentlyActiveUser=newUser;
   firstLetterOfUsername.innerHTML=currentlyActiveUser.username[0].toUpperCase()+firstLetterOfUsername.innerHTML;
   firstLetterOfUsername.style.display="flex";
