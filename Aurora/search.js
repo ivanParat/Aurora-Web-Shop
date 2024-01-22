@@ -31,8 +31,13 @@ function generateHTMLContent(){
       </div>
       <div class="productBrand">${product.brand}</div>
       <div class="productName">${product.name}</div>
+      <div class="reviewContainer">
+        <span class="avgRating"></span>
+        <span class="stars"></span>
+        <span class="numberOfReviews"></span>
+      </div>
       <div class="priceAndCartContainer">
-        <div class="productPrice">${product.price}</div>
+        <div class="productPrice">€${product.price}</div>
         <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/shopping_cart.png" class="shoppingCartIcon"/>
       </div>
     `;
@@ -70,15 +75,19 @@ const fetchProductData = async (query) => {
 
 const productDataQuery = "SELECT product.name AS name, product.brand, product.price, category.name AS category,product.imageSrc FROM product INNER JOIN category ON product.category_id=category.id";
 
-const searchProducts = async () => {
-  await fetchProductData(productDataQuery);
-  productList.forEach(product => {
-    if(simpleStringSearch(product.name, search)!=-1 || simpleStringSearch(product.brand, search)!=-1 || simpleStringSearch(product.category, search)!=-1){
-        searchedProductList.push(product);
-    }
+function searchProducts() {
+  return new Promise(async (resolve) => {
+      await fetchProductData(productDataQuery);
+      productList.forEach(product => {
+          if(simpleStringSearch(product.name, search)!=-1 || simpleStringSearch(product.brand, search)!=-1 || simpleStringSearch(product.category, search)!=-1){
+              searchedProductList.push(product);
+          }
+      });
+      console.log("Searched products:",searchedProductList);
+      generateHTMLContent();
+      resolve(); // Resolve the promise after HTML content is generated
   });
-  console.log("Searched products:",searchedProductList);
-  generateHTMLContent();
-};
+}
 
-searchProducts();
+//now called in reviews.js because reviews wouldn't show up on the products, reviews.js would probably execute before searched products were even loaded
+//searchProducts();

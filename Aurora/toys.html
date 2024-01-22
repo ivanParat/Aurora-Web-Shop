@@ -46,7 +46,7 @@
         <div class="firstLetterOfUsername">
           <div class="mobile-mini-menu">
             <div class="mobile-links">
-              <div class="mobile-link" id="logOutBtn" onclick="logOut()">Log Out</div>
+              <div class="mobile-link" id="logOutBtn" onclick="logOut();getActiveUser();checkReviewContainersForUserReview();">Log Out</div>
             </div>
           </div>
         </div>
@@ -142,6 +142,11 @@
             </div>
             <div class="productBrand">LEGO</div>
             <div class="productName">Lego Classic Creative Bricks</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€29.99</div>
                 <img
@@ -160,6 +165,11 @@
             </div>
             <div class="productBrand">Barbie</div>
             <div class="productName">Barbie Dreamhouse</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€179.99</div>
                 <img
@@ -178,6 +188,11 @@
             </div>
             <div class="productBrand">Hot Wheels</div>
             <div class="productName">Hot Wheels Basic Car 50-Pack</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€49.99</div>
                 <img
@@ -196,6 +211,11 @@
             </div>
             <div class="productBrand">Nerf</div>
             <div class="productName">Nerf N-Strike Elite Disruptor</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€12.99</div>
                 <img
@@ -214,6 +234,11 @@
             </div>
             <div class="productBrand">Fisher-Price</div>
             <div class="productName">Fisher-Price Laugh &amp; Learn Smart Stages Chair</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€24.99</div>
                 <img
@@ -232,6 +257,11 @@
             </div>
             <div class="productBrand">Melissa &amp; Doug</div>
             <div class="productName">Melissa &amp; Doug Wooden Building Blocks Set</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€69.99</div>
                 <img
@@ -250,6 +280,11 @@
             </div>
             <div class="productBrand">Play-Doh</div>
             <div class="productName">Play-Doh Modeling Compound 10-Pack</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€7.99</div>
                 <img
@@ -268,6 +303,11 @@
             </div>
             <div class="productBrand">VTech</div>
             <div class="productName">VTech Sit-to-Stand Learning Walker</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€34.99</div>
                 <img
@@ -296,6 +336,11 @@
             </div>
             <div class="productBrand">Crayola</div>
             <div class="productName">Crayola Inspiration Art Case</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€24.99</div>
                 <img
@@ -314,6 +359,11 @@
             </div>
             <div class="productBrand">Radio Flyer</div>
             <div class="productName">Radio Flyer Red Rider Trike</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€49.99</div>
                 <img
@@ -332,6 +382,11 @@
             </div>
             <div class="productBrand">Magna-Tiles</div>
             <div class="productName">Magna-Tiles Clear Colors 100-Piece Set</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€119.99</div>
                 <img
@@ -350,6 +405,11 @@
             </div>
             <div class="productBrand">LeapFrog</div>
             <div class="productName">LeapFrog Learning Friends 100 Words Book</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€17.99</div>
                 <img
@@ -368,6 +428,11 @@
             </div>
             <div class="productBrand">Baby Einstein</div>
             <div class="productName">Baby Einstein Take Along Tunes Musical Toy</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€8.99</div>
                 <img
@@ -386,6 +451,11 @@
             </div>
             <div class="productBrand">Green Toys</div>
             <div class="productName">Green Toys Ferry Boat with Mini Cars Bathtub Toy</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€19.99</div>
                 <img
@@ -404,6 +474,11 @@
             </div>
             <div class="productBrand">LEGO</div>
             <div class="productName">LEGO DUPLO Classic Deluxe Brick Box</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€39.99</div>
                 <img
@@ -422,6 +497,11 @@
             </div>
             <div class="productBrand">Melissa &amp; Doug</div>
             <div class="productName">Melissa &amp; Doug Food Groups - 21 Hand-Painted Wooden Pieces</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€19.99</div>
                 <img
@@ -454,6 +534,7 @@
     ></script>
 
     <script src="authentication.js"></script>
+    <script src="reviews.js"></script>
     <script src="onclickSearch.js"></script>
   </body>
 </html>

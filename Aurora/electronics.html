@@ -46,7 +46,7 @@
         <div class="firstLetterOfUsername">
           <div class="mobile-mini-menu">
             <div class="mobile-links">
-              <div class="mobile-link" id="logOutBtn" onclick="logOut()">Log Out</div>
+              <div class="mobile-link" id="logOutBtn" onclick="logOut();getActiveUser();checkReviewContainersForUserReview();">Log Out</div>
             </div>
           </div>
         </div>
@@ -142,6 +142,11 @@
             </div>
             <div class="productBrand">Apple</div>
             <div class="productName">iPhone 14 Pro</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€1099.99</div>
                 <img
@@ -160,6 +165,11 @@
             </div>
             <div class="productBrand">Samsung</div>
             <div class="productName">Galaxy S22 Ultra</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€1199.99</div>
                 <img
@@ -178,6 +188,11 @@
             </div>
             <div class="productBrand">Google</div>
             <div class="productName">Pixel 7</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€999.99</div>
                 <img
@@ -196,6 +211,11 @@
             </div>
             <div class="productBrand">Sony</div>
             <div class="productName">Xperia 1 III</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€1099.99</div>
                 <img
@@ -214,6 +234,11 @@
             </div>
             <div class="productBrand">Xiaomi</div>
             <div class="productName">Mi 12</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€899.99</div>
                 <img
@@ -232,6 +257,11 @@
             </div>
             <div class="productBrand">OnePlus</div>
             <div class="productName">OnePlus 10 Pro</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€1099.99</div>
                 <img
@@ -250,6 +280,11 @@
             </div>
             <div class="productBrand">Asus</div>
             <div class="productName">ROG Phone 5</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€999.99</div>
                 <img
@@ -268,6 +303,11 @@
             </div>
             <div class="productBrand">Microsoft</div>
             <div class="productName">Lumia 950 XL</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€599.99</div>
                 <img
@@ -296,6 +336,11 @@
             </div>
             <div class="productBrand">Motorola</div>
             <div class="productName">Moto G Stylus</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€299.99</div>
                 <img
@@ -314,6 +359,11 @@
             </div>
             <div class="productBrand">Asus</div>
             <div class="productName">ZenFone 8</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€799.99</div>
                 <img
@@ -332,6 +382,11 @@
             </div>
             <div class="productBrand">BlackBerry</div>
             <div class="productName">BlackBerry Key3</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€699.99</div>
                 <img
@@ -350,6 +405,11 @@
             </div>
             <div class="productBrand">Nokia</div>
             <div class="productName">Nokia 9 PureView</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€499.99</div>
                 <img
@@ -368,6 +428,11 @@
             </div>
             <div class="productBrand">Xiaomi</div>
             <div class="productName">Redmi Note 11 Pro</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€399.99</div>
                 <img
@@ -386,6 +451,11 @@
             </div>
             <div class="productBrand">LG</div>
             <div class="productName">LG Velvet</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€599.99</div>
                 <img
@@ -404,6 +474,11 @@
             </div>
             <div class="productBrand">Fairphone</div>
             <div class="productName">Fairphone 4</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€699.99</div>
                 <img
@@ -422,6 +497,11 @@
             </div>
             <div class="productBrand">Realme</div>
             <div class="productName">Realme GT</div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€499.99</div>
                 <img
@@ -454,6 +534,7 @@
     ></script>
 
     <script src="authentication.js"></script>
+    <script src="reviews.js"></script>
     <script src="onclickSearch.js"></script>
   </body>
 </html>

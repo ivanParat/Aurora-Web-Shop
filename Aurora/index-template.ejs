@@ -46,7 +46,7 @@
         <div class="firstLetterOfUsername">
           <div class="mobile-mini-menu">
             <div class="mobile-links">
-              <div class="mobile-link" id="logOutBtn" onclick="logOut()">Log Out</div>
+              <div class="mobile-link" id="logOutBtn" onclick="logOut();getActiveUser();checkReviewContainersForUserReview();">Log Out</div>
             </div>
           </div>
         </div>
@@ -142,6 +142,11 @@
             </div>
             <div class="productBrand"><%= products[i].brand %></div>
             <div class="productName"><%= products[i].name %></div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€<%= products[i].price %></div>
                 <img
@@ -170,6 +175,11 @@
             </div>
             <div class="productBrand"><%= products[i].brand %></div>
             <div class="productName"><%= products[i].name %></div>
+            <div class="reviewContainer">
+              <span class="avgRating"></span>
+              <span class="stars"></span>
+              <span class="numberOfReviews"></span>
+            </div>
             <div class="priceAndCartContainer">
                 <div class="productPrice">€<%= products[i].price %></div>
                 <img
@@ -202,6 +212,7 @@
     ></script>
 
     <script src="authentication.js"></script>
+    <script src="reviews.js"></script>
     <script src="onclickSearch.js"></script>
   </body>
 </html>

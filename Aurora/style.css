@@ -373,7 +373,6 @@ h1 {
 }
 .productName {
   margin-top: 1px;
-  margin-bottom: 6px;
   width: 20vw;
 }
 @media (max-width: 640px) {
@@ -687,4 +686,31 @@ footer {
 .firstLetterOfUsername:checked .mobile-mini-menu {
   display: flex;
   top: 50px;
+}
+
+.reviewContainer{
+  display: flex;
+  align-items: center;
+}
+.avgRating{
+  color: gray;
+}
+.stars{
+  display: inline;
+  margin: 0 5px;
+}
+.stars span {
+  color: #e0e0e0;
+  font-size: 24px;
+  cursor: pointer;
+}
+.stars span:hover,
+.stars span.active {
+  color: #ffcc00; /* Color when hovered or clicked */
+}
+.stars span.alreadyReviewed {
+  color: #6f00ff; /* Color when hovered or clicked */
+}
+.numberOfReviews{
+  color: gray;
 }
