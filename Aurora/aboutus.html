@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation__wrapper">
+            <div class="logo">
+                <a href="index.html"><h1>Aurora</h1></a>
+            </div>
+            <div class="links-wrapper">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" class="search-input" />
+                    <a href="search.html">
+                        <button class="search-button">Search</button>
+                    </a>
+                </div>
+
+                <div class="link">
+                    <a class="link__text" href="">Categories </a>
+                    <div class="mobile-mini-menu">
+                        <div class="mobile-links">
+                            <a class="mobile-link" href="clothes.html">Clothes</a>
+                            <a class="mobile-link" href="electronics.html">Electronics</a>
+                            <a class="mobile-link" href="tools.html">Tools</a>
+                            <a class="mobile-link" href="toys.html">Toys</a>
+                            <a class="mobile-link" href="other.html">Other</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="link">
+                    <a class="link__text" href="">About us </a>
+                </div>
+                <div class="link">
+                    <a class="link__text" href="">Cart </a>
+                </div>
+                <div class="link">
+                    <a class="link__text link--button" href="">Sign In </a>
+                </div>
+            </div>
+            <div class="firstLetterOfUsername">
+                <div class="mobile-mini-menu">
+                    <div class="mobile-links">
+                        <div class="mobile-link" id="logOutBtn" onclick="logOut()">Log Out</div>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" class="hidden" id="hamburger" />
+            <label for="hamburger" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="navigation__wraper-mobile">
+                <div class="mobile-center">
+                    <div class="link">
+                        <a class="link__text" href="">Products</a>
+                    </div>
+                    <div class="link">
+                        <a class="link__text" href="">Categories </a>
+                        <div class="mobile-mini-menu">
+                            <div class="mobile-links">
+                                <a class="mobile-link" href="clothes.html">Clothes</a>
+                                <a class="mobile-link" href="electronics.html">Electronics</a>
+                                <a class="mobile-link" href="tools.html">Tools</a>
+                                <a class="mobile-link" href="toys.html">Toys</a>
+                                <a class="mobile-link" href="other.html">Other</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a class="link__text" href="">About us </a>
+                    </div>
+                    <div class="link">
+                        <a class="link__text" href="">Cart </a>
+                    </div>
+                    <div class="link">
+                        <a class="link__text link--button" href="">Sign In </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar-mobile">
+            <input type="text" placeholder="Search" class="search-input-mobile" />
+            <a href="search.html">
+                <button class="search-button-mobile">Search</button>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" placeholder="User" class="input" id="signUpUsername" />
+                <input type="email" placeholder="Email" class="input" id="signUpEmail" />
+                <input type="password" placeholder="Password" class="input" id="signUpPassword" />
+                <button class="btn" id="signUpEnter">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form__title">Sign In</h2>
+                <input type="email" placeholder="Email" class="input" id="signInEmail" />
+                <input type="password" placeholder="Password" class="input" id="signInPassword" />
+                <a href="#" class="link">Forgot your password?</a>
+                <button class="btn" id="signInEnter">Sign In</button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="aboutPhoto">
+        <br><br><br>
+        <h2>About Aurora WebShop</h2>
+        <br><br>
+        <h3>From High Fashion to High Tech to High Fun, We've Got it All!</h3>
+        <p>Aurora WebShop is not just a store, it's a lifestyle! We offer a wide range of products to suit every style, hobby, and interest.<br>
+        Whether you're updating your wardrobe, upgrading your gadgets, expanding your tool collection, or looking for the perfect toy, Aurora WebShop is your go-to destination.</p>
+        <br><br>
+        <h3>Experience Quality, Convenience, and Variety at Aurora WebShop!</h3>
+        <p>Shopping at Aurora WebShop means enjoying high-quality products, convenient online shopping, and a vast variety of options to choose from.<br>
+        We strive to provide our customers with an unparalleled shopping experience, offering the best products from a range of categories, all under one virtual roof.</p>
+
+        <div class="row">
+            <div class="aboutPhoto-col">
+                <img src="https://www.liquidplanner.com/wp-content/uploads/2022/06/blgo-header-small-business-tips-1024x640.jpg">
+                <div class="layer">
+                    <h3>Our Team</h3>
+                </div>
+            </div>
+            <div class="aboutPhoto-col">
+                <img src="https://assets-us-01.kc-usercontent.com/9d651bac-5117-00f8-98a0-cbaa3849f366/e6219074-2476-4754-9fc8-5c7bad8b9e95/Earth%20Day%20Home%20Improvement_Small%20Banner%20Web%201024x640%20%28500mb%20max%29.jpg">
+                <div class="layer">
+                    <h3>Eco-Friendly</h3>
+                </div>
+            </div>
+            <div class="aboutPhoto-col">
+                <img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/648877c4cd4726001cb12157.jpg">
+                <div class="layer">
+                    <h3>Community Involvement</h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <section class="aboutReview">
+        <h2>Reviews</h2>
+        <br>
+        <p>Catering to diverse tastes and needs - that's Aurora WebShop! Now, let's hear from our satisfied customers...</p>
+
+        <div class="row">
+            <div class="aboutReview-col">
+                <img src="https://static-00.iconduck.com/assets.00/profile-icon-512x512-w0uaq4yr.png">
+                <div>
+                    <p>"I absolutely love shopping at Aurora WebShop! Their selection of clothes and electronics is top-notch, and their customer service is outstanding. Highly recommended!"</p>
+                    <h3>Marlene(19)</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="aboutReview-col">
+                <img src="https://static-00.iconduck.com/assets.00/profile-icon-512x512-w0uaq4yr.png">
+                <div>
+                    <p>"Aurora WebShop is my go-to place for tools and toys. The quality of their products is unmatched, and I've always had a great experience with their team."</p>
+                    <h3>Jordan(32)</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>Your Destination for Quality!<br></h1>
+        <a href="index.html" class="hero-btn">Shop</a><br><br>
+        <p>Find Us Here!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.5720336176914!2d16.4691668!3d43.511262699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355e3cb0c9f87b%3A0xb77a450dfaaa7f6!2sFaculty%20of%20Electrical%20Engineering%2C%20Mechanical%20Engineering%20and%20Naval%20Architecture%2C%2021000%2C%20Split!5e0!3m2!1sen!2shr!4v1705952529486!5m2!1sen!2shr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        Connect with us at
+        <div class="socialMediaIconContainer">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+    </footer>
+
+    <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="authentication.js"></script>
+    <script src="onclickSearch.js"></script>
+</body>
+</html>
