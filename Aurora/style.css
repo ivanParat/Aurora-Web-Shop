@@ -326,6 +326,13 @@ h1 {
   justify-content: center;
   margin-bottom: 20px;
 }
+#cartContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top:30px;
+}
 .productCard {
   display: flex;
   flex-direction: column;
@@ -713,4 +720,73 @@ footer {
 }
 .numberOfReviews{
   color: gray;
+}
+.fotterCart{
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.cartTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.cartTitle h1{
+  align-items: center;
+  color: black;
+  align-self: center;
+}
+@media screen and (max-width: 1400px) {
+  .cartTitle{
+    margin-top: 140px;
+  }
+}
+.buy{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #9dffd8;
+  
+}
+#totalSum{
+  align-items: center;
+  color: black;
+  align-self: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.cartBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#buyBtn{
+  height: 40px;
+    padding: 0 30px;
+    border-radius: 30px;
+    background-color: #008550;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 0;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 300ms ease-out;
+    transition: background-color 300ms ease-out;
+}
+#buyBtn:hover {
+  color: white;
+  background-color: #89e6d9;
 }

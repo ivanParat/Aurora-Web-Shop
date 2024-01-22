@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="cartBody">
+    <div class="navigation">
+      <div class="navigation__wrapper">
+        <div class="logo">
+          <a href="index.html"><h1>Aurora</h1></a>
+        </div>
+        <div class="links-wrapper">
+          <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input" />
+            <a href="search.html">
+              <button class="search-button">Search</button>
+            </a>
+          </div>
+
+          <div class="link">
+            <a class="link__text" href="">Categories </a>
+            <div class="mobile-mini-menu">
+              <div class="mobile-links">
+                <a class="mobile-link" href="clothes.html">Clothes</a>
+                <a class="mobile-link" href="electronics.html">Electronics</a>
+                <a class="mobile-link" href="tools.html">Tools</a>
+                <a class="mobile-link" href="toys.html">Toys</a>
+                <a class="mobile-link" href="other.html">Other</a>
+              </div>
+            </div>
+          </div>
+          <div class="link">
+            <a class="link__text" href="">About us </a>
+          </div>
+          <div class="link" id="cartLink">
+            <a class="link__text" href="">Cart </a>
+          </div>
+          <div class="link">
+            <a class="link__text link--button" href="">Sign In </a>
+          </div>
+        </div>
+        <div class="firstLetterOfUsername">
+          <div class="mobile-mini-menu">
+            <div class="mobile-links">
+              <div class="mobile-link" id="logOutBtn" onclick="logOut()">
+                Log Out
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="checkbox" class="hidden" id="hamburger" />
+        <label for="hamburger" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <div class="navigation__wraper-mobile">
+          <div class="mobile-center">
+            <div class="link">
+              <a class="link__text" href="">Products</a>
+            </div>
+            <div class="link">
+              <a class="link__text" href="">Categories </a>
+              <div class="mobile-mini-menu">
+                <div class="mobile-links">
+                  <a class="mobile-link" href="clothes.html">Clothes</a>
+                  <a class="mobile-link" href="electronics.html">Electronics</a>
+                  <a class="mobile-link" href="tools.html">Tools</a>
+                  <a class="mobile-link" href="toys.html">Toys</a>
+                  <a class="mobile-link" href="other.html">Other</a>
+                </div>
+              </div>
+            </div>
+            <div class="link">
+              <a class="link__text" href="">About us </a>
+            </div>
+            <div class="link">
+              <a class="link__text" href="">Cart </a>
+            </div>
+            <div class="link">
+              <a class="link__text link--button" href="">Sign In </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-bar-mobile">
+        <input type="text" placeholder="Search" class="search-input-mobile" />
+        <a href="search.html">
+          <button class="search-button-mobile">Search</button>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="cartTitle"><h1>Your Aurora Cart</h1></div>
+    <div id="cartContainer"></div>
+    <div class="buy">
+       <div id="totalSum"></div>
+       <button id="buyBtn">Buy</button>
+    </div>
+    
+
+
+
+    <footer class="fotterCart">
+      Connect with us at
+      <div class="socialMediaIconContainer">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </div>
+    </footer>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+    <script src="cart.js"></script>
+    <!-- Include your JavaScript file -->
+  </body>
+</html>
