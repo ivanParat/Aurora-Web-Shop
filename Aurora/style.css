@@ -56,7 +56,7 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
   .links-wrapper {
     display: none;
   }
@@ -143,7 +143,7 @@ body {
   display: none;
   cursor: pointer;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
   .hamburger {
     display: block;
   }
@@ -165,7 +165,7 @@ body {
 .navigation__wraper-mobile {
   display: none;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
   .navigation__wraper-mobile {
     background-color: #282828;
     display: flex;
@@ -180,22 +180,22 @@ body {
   }
 }
 .hidden:checked ~ .navigation__wraper-mobile {
-  right:0;
+  right: 0;
 }
-.hidden:checked ~ .hamburger{
-  top:30px;
+.hidden:checked ~ .hamburger {
+  top: 30px;
 }
-.hidden:checked ~ .hamburger > div:nth-child(1){
+.hidden:checked ~ .hamburger > div:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: translate(0px, 10px) rotate(45deg);
 }
-.hidden:checked ~ .hamburger > div:nth-child(2){
+.hidden:checked ~ .hamburger > div:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
-.hidden:checked ~ .hamburger > div:nth-child(3){
+.hidden:checked ~ .hamburger > div:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -230,4 +230,461 @@ h1 {
   h1 {
     font-size: 50px;
   }
+}
+.search-bar {
+  display: flex;
+  background-color: #101820;
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Move the search bar to the right */
+}
+
+.search-input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 75%;
+}
+
+.search-button {
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 30px;
+  background-color: #008550;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 0;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+
+}
+.search-button:hover {
+  color: white;
+  background-color: #89e6d9;
+}
+.search-bar-mobile {
+  display: none;
+}
+@media screen and (max-width: 1200px){
+  .search-bar{
+    display: none;
+  }
+  .search-bar-mobile {
+    display: flex;
+    background-color: #101820;
+    padding: 0px 20px 20px 20px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); 
+  }
+  
+  .search-input-mobile {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 75%;
+  }
+  
+  .search-button-mobile {
+    background-color: #008550;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    margin-right: 0;
+  }
+  
+}
+
+.banner {
+  width: 100%;
+}
+.featuredProductsText {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.featuredProductsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(238, 238, 238);
+  box-shadow: 0 4px 10px 0px rgb(238, 238, 238);
+  padding: 5px;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+.productCard:hover {
+  box-shadow: 0 4px 10px 5px rgb(238, 238, 238);
+  transform: scale(1.02);
+}
+.imageContainer{
+  position: relative;  /* The position: relative; is used to position the absolutely positioned child element relative to this container */
+  width: 20vw;
+}
+.imageContainer::before {
+  /* The ::before pseudo-element is used to insert an invisible element before the content of the .imageContainer. This element is styled as a block-level element with display: block;. The padding-top: 100%; creates a padding at the top of the block that is equal to the width of the container, resulting in a square because it's a percentage of the container's width. */
+  content: "";
+  display: block;
+  padding-top: 100%; /* This creates a square based on a 1:1 aspect ratio */
+}
+.imageContainer img {
+  /* Position: absolute; positions it absolutely within the .imageContainer. The top: 0; and left: 0; properties ensure that it starts from the top-left corner of the container. Both width: 100%; and height: 100%; make the content take up the entire dimensions of the container, maintaining the 1:1 aspect ratio. */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image fill its container horizontally */
+  height: 100%; /* Make the image fill its container vertically */
+}
+.productImage {
+  border-radius: 10px;
+}
+@media (max-width: 640px) {
+  .imageContainer {
+    width: 40vw;
+  }
+}
+.productBrand {
+  margin-top: 5px;
+  color: gray;
+  font-size: 0.8em;
+}
+.productName {
+  margin-top: 1px;
+  margin-bottom: 6px;
+  width: 20vw;
+}
+@media (max-width: 640px) {
+  .productName {
+    width: 40vw;
+  }
+}
+.priceAndCartContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.productPrice {
+  display: flex;
+  align-items: center;
+  color: #007043;
+  font-size: 1.1em;
+}
+.shoppingCartIcon {
+  height: 25px;
+}
+.shoppingCartIcon:hover {
+  cursor: pointer;
+  transform: scale(1.11);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #101820;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+}
+.socialMediaIconContainer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.socialMediaIconContainer ion-icon {
+  color: white;
+  font-size: 22px;
+  margin: 15px;
+  margin-top: 10px;
+  background-color: #101820;
+}
+.socialMediaIconContainer ion-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.newArrivalsText {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.newArrivalsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+:root {
+  /* COLORS */
+  --white: #e9e9e9;
+  --gray: #333;
+  --blue: #0367a6;
+  --lightblue: #008997;
+
+  /* RADII */
+  --button-radius: 0.7rem;
+
+  /* SIZES */
+  --max-width: 758px;
+  --max-height: 420px;
+
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form__title {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 1.25rem;
+}
+
+.linkA {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+  text-decoration: none;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: var(--button-radius);
+  box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+    0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+  height: var(--max-height);
+  max-width: var(--max-width);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  margin: 100px auto;
+  display: none;
+}
+.visibleContainer {
+  display: block;
+}
+
+.container__form {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.container--signin {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.container.right-panel-active .container--signin {
+  transform: translateX(100%);
+}
+
+.container--signup {
+  left: 0;
+  opacity: 0;
+  width: 50%;
+  z-index: 1;
+}
+
+.container.right-panel-active .container--signup {
+  animation: show 0.6s;
+  opacity: 1;
+  transform: translateX(100%);
+  z-index: 5;
+}
+
+.container__overlay {
+  height: 100%;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: transform 0.6s ease-in-out;
+  width: 50%;
+  z-index: 100;
+}
+
+.container.right-panel-active .container__overlay {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background-color: var(--lightblue);
+  background-image: url("./assets/cart.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: -100%;
+  position: relative;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+  width: 200%;
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay__panel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+  width: 50%;
+}
+
+.overlay--left {
+  transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay--left {
+  transform: translateX(0);
+}
+
+.overlay--right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay--right {
+  transform: translateX(20%);
+}
+
+.btn {
+  background-color: var(--blue);
+  background-image: linear-gradient(
+    90deg,
+    var(--blue) 0%,
+    var(--lightblue) 74%
+  );
+  border-radius: 20px;
+  border: 1px solid var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.9rem 4rem;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.form > .btn {
+  margin-top: 1.5rem;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.form {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 3rem;
+  height: 100%;
+  text-align: center;
+}
+
+.input {
+  background-color: #fff;
+  border: none;
+  padding: 0.9rem 0.9rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.firstLetterOfUsername{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: x-large;
+  background-color: #ec6d32;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+  display: none;
+  margin-left: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .firstLetterOfUsername {
+    position: absolute;
+    right: 70px;
+  }
+}
+.firstLetterOfUsername:hover {
+  background-color: #fff67e;
+}
+.firstLetterOfUsername:hover .mobile-mini-menu {
+  display: flex;
+  top: 50px;
+  border-top: 10px solid #101820;
+}
+@media screen and (max-width: 1200px) {
+  .firstLetterOfUsername:hover .mobile-mini-menu {
+    display: flex;
+    top: 40px;
+    border-top: 10px solid #101820;
+  }
+}
+.firstLetterOfUsername:checked .mobile-mini-menu {
+  display: flex;
+  top: 50px;
 }
