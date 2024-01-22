@@ -1,8 +1,8 @@
 const { Client } = require('pg');
 
 const username='postgres';
-const password='pswdaur';
-const databaseName='aurora';
+const password='marko12345';
+const databaseName='Aurora';
 
 const connectionString = `postgresql://${username}:${password}@localhost:5432/${databaseName}`;
 const client = new Client({
