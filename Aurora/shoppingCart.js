@@ -7,7 +7,8 @@ if (window.location.pathname.includes('index.html')||
     window.location.pathname.includes('other.html')||
     window.location.pathname.includes('search.html')||
     window.location.pathname.includes('tools.html')||
-    window.location.pathname.includes('toys.html')
+    window.location.pathname.includes('toys.html')||
+    window.location.pathname.includes('aboutus.html')
 ) {
   shoppingCart = [];
   localStorage.setItem('shoppingCart', JSON.stringify(shoppingCart));
